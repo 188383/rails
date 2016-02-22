@@ -13,7 +13,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages={"com.rails.web"})
+@ComponentScan(basePackages={"com.rails.web","com.rails.data"})
 public class WebConfig extends WebMvcConfigurerAdapter{
 	
 	@Bean	
