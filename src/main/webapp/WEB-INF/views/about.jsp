@@ -17,6 +17,7 @@
         <a href="<c:url value="/home"/>">home</a>
 	<a href="<c:url value="/about" />">about</a>
         <a href="<c:url value="/faq" />">faq</a>
+        
         ${message}
     </body>
 </html>
