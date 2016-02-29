@@ -1,6 +1,6 @@
 <%-- 
-    Document   : profile
-    Created on : Feb 24, 2016, 9:42:13 PM
+    Document   : map
+    Created on : Feb 25, 2016, 8:37:13 AM
     Author     : pawel
 --%>
 
@@ -9,9 +9,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Profile Page</title>
+        <title>Map Page</title>
     </head>
     <body>
-        <h1>Profile</h1>
+        <h1>Map</h1>
     </body>
 </html>

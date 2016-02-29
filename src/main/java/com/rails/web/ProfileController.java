@@ -5,7 +5,9 @@
  */
 package com.rails.web;
 
+import java.text.Format;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -39,8 +41,10 @@ public class ProfileController {
     */
     //The profile page, this is presented after loggin in
     @RequestMapping({"/users/{username}"})
-    public String profilePage(){
-        return "profile";
+    public String profilePage(Model model){
+        String message = "<h1>This is the main products page </h1>";
+        model.addAttribute(message);
+        return "profile/profile";
     }
     
     /*
@@ -53,7 +57,7 @@ public class ProfileController {
     //serve the page with all the credit options
     @RequestMapping({"/users/{username}/credit"})
     public String profileCreditPage(){
-        return "";
+        return "profile/credit";
     }
     /*
         This is the mapping that serves the page that will show the list of all the trailers
@@ -65,7 +69,7 @@ public class ProfileController {
     @RequestMapping({"/users/{username}/trailers"})
     public String profileTrailerPage(){
         
-        return "";
+        return "profile/trailer";
     }
     /*
         This method displays a feature rich map that will have all the tracks placed

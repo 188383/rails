@@ -1,6 +1,6 @@
 <%-- 
-    Document   : register
-    Created on : Feb 23, 2016, 11:30:39 AM
+    Document   : map
+    Created on : Feb 25, 2016, 8:37:13 AM
     Author     : pawel
 --%>
 
@@ -9,9 +9,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Registration Page</title>
+        <title>Map Page</title>
     </head>
     <body>
-        <h1>Registration</h1>
+        <h1>Map</h1>
     </body>
 </html>

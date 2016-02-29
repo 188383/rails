@@ -32,7 +32,7 @@ public class LoginController {
     @RequestMapping(method=RequestMethod.GET)
     public String loginForm(){
         
-        return "login";
+        return "forms/login";
     }
     
 

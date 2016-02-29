@@ -8,11 +8,28 @@ package com.rails.entity;
 import java.util.Date;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
+import javax.validation.*;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 
 /**
  *
  * @author pawel
+ * TODO
+ * This model still needs to have validation added to it. Further planning of the database
+ * will also be needed. 
  */
+
+/*
+    This class represents the person entity. This is the class that describes 
+    all people involved in a particular organisation. 
+
+TODO:  add a role/group to each person. When we have a group created we can have
+multiple users use a company account to do updates and to use the applications.
+ie. users can be owner, manager, simple or what ever other segregation we need. 
+*/
 
 public class Person {
     private Long id;
@@ -26,10 +43,10 @@ public class Person {
     
     public Person(){
         this.id = null;
-        this.firstName = null;
-        this.lastName = null;
-        this.username = null;
-        this.password = null;
+        this.firstName = "";
+        this.lastName = "";
+        this.username = "";
+        this.password = "";
         this.salt = null;
     }
     

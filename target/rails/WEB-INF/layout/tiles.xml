@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <!--Definition of our base tile -->
+    <definition name="base"
+        template="/WEB-INF/layout/page.jsp">
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+        <put-attribute name="navbar" value="/WEB-INF/layout/navbar.jsp" />
+    </definition>
+    <!--This is the home page tile which is changes the value of the body element-->
+    <definition name="home" extends="base">
+        <put-attribute name="body" value="/WEB-INF/views/home.jsp" />
+    </definition>
+    <!--This is the tile that generates the registration form -->
+    <definition name="registerForm" extends="base">
+        <put-attribute name="body" value="/WEB-INF/views/froms/register.jsp" />
+    </definition>
+    <!-- This is the tile that generates the profile page -->
+    <definition name="profile" extends="base">
+        <put-attribute name="body" value="/WEB-INF/views/profile/profile.jsp" />
+    </definition>
+    <!-- more views will be defined here as the application expands its operations -->
+    <!-- tile that generates the about page -->
+    <definition name="about" extends="base">
+        <put-attribute name="body" value="/WEB-INF/views/about.jsp" />
+    </definition>
+    <!-- Tile that generates the frequently asked questions page-->
+    <definition name="faq" extends="base">
+        <put-attribute name="body" value="/WEB-INF/views/faq.jsp" />
+    </definition>
+</tiles-definitions>

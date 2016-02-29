@@ -1,14 +1,14 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page session="false" %>
-
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title> RailRunner </title>
-	</head>
-	<body>
-		<h1> Welcome to railrunner </h1>
-                <a href="<c:url value="/home"/>">home</a>
-		<a href="<c:url value="/about" />">about</a>
-                <a href="<c:url value="/faq" />">faq</a>
-	</body>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>About Page</title>
+    </head>
+    <body>
+        <h1>Home</h1>
+        
+        <p>${message}</p>
+    </body>
 </html>

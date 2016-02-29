@@ -57,10 +57,16 @@
       <type>jar</type>
     </dependency>
     <dependency>  
-    <groupId>javax</groupId>    
-    <artifactId>javaee-web-api</artifactId>    
-    <version>7.0</version>
-	</dependency>
+        <groupId>javax</groupId>    
+         <artifactId>javaee-web-api</artifactId>    
+         <version>7.0</version>
+    </dependency>
+    <dependency>
+	<groupId>org.apache.tiles</groupId>
+	<artifactId>tiles-extras</artifactId>
+	<version>3.0.5</version>
+    </dependency>
+
   </dependencies>
   <build>
     <finalName>rails</finalName>
